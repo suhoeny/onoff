@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Noto Sans KR', 'Playfair Display', sans-serif;
+}
+    body{
+        height: 100vh;
+        padding-left: 19.271vw;
+        position: relative;
+        
+        overflow-y: hidden;
+    }
+        body::-webkit-scrollbar{
+            overflow: hidden;
+            display: none;
+        }
+            a {
+                text-decoration: none;
+            }
+            input:focus{
+                outline: none;
+            }
+        /* 네비게이션 영역 */
+        ul {
+            list-style: none;
+        }
+
+        .headercon{
+            max-width: 61.458vw;
+        }
+        
+        header {
+            position: fixed;
+            z-index: 1;
+            
+            width: 61.458vw;
+            height: 4.167vw;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 4.167vw;
+            color: #6f6f6f;
+            font-family: 'Noto Sans KR', sans-serif;
+            /* border-bottom: 1px solid #fff; */
+        }
+        
+        header .logo {
+            font-weight: 400;
+            font-size: 1.042vw;
+            color: #151515;
+        }
+        
+        header .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2.917vw;
+        }
+        
+        header .nav li a {
+            font-weight: 400;
+            font-size: 0.833vw;
+        }
+        
+        .headercon{
+            position: relative;
+        }
+
+        .navitem1, .navitem3, .navitem4{
+            color: #999;
+        }
+        
+        .navitem2, .navitem3, .navitem4{
+            transition: all 0.2s ease;
+        }
+
+        .navitem2{
+            color: #151515;
+        }
+        
+        .drop{
+            position: absolute;
+            left: 45.313vw;
+            top: 3.333vw;
+            z-index: 10;
+
+            color: 151515;
+            font-weight: 400;
+            font-size: 0.833vw;
+            width: 6.875vw;
+            height: 3.750vw;
+            border-radius: 0.208vw;
+            padding-left: 0.625vw;
+            background-color: #fff;
+            font-family: 'Noto Sans KR', sans-serif;
+            border: 1px solid #D5D5D5;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.417vw;
+            opacity: 0;
+        }
+        .dropnav{
+            color: #000;
+        }
+        
+        .opacity{
+            opacity: 1;
+        }
+        /* 메인 이미지 영역 */
+main{
+    position: relative;
+    left: -19.271vw;
+    top: 0;
+    
+    width: 100vw;
+    height: 100vh;
+    
+    white-space: nowrap;
+}
+
+    main > div:nth-child(1){
+        position: absolute;
+        left: 19.27vw;
+        top: 0;
+        
+
+        width: 20.833vw;
+        height: 10.417vw;
+
+        padding-top: 7.292vw;
+
+        z-index: 0;
+    }
+        main > div:nth-child(1) > h1, h2{
+                display: inline;
+                color: #333333;
+            }
+        main > div:nth-child(1) > h1{
+            font-size: 1.458vw;
+            font-weight: 500;
+            line-height: 1.771vw;
+            
+            padding-right: 1.042vw;
+        }
+        main > div:nth-child(1) > h2{
+            font-size: 0.937vw;
+            font-weight: 400;
+            line-height: 1.198vw;
+
+            padding-top: 0.781vw;
+        }
+        main > div:nth-child(1) > p{
+            font-size: 0.833vw;
+            font-weight: 400;
+            line-height: 1.354vw;
+
+            padding-top: 1.406vw;
+            color: rgba(106, 106, 106, 0.8);
+        }
+
+    main > div:nth-child(2){   
+        position: absolute;
+        left: 19.27vw;
+        top: 18.125vw;
+        
+        z-index: 0;
+        }
+        main > div:nth-child(2) > img{
+            width: 54.635vw;
+            height: 26.667vw;
+        }
+    main > div:nth-child(3){   
+            position: absolute;
+            left: 77.656vw;
+            top: 7.135vw;
+            
+            z-index: 0;
+        }
+            main > div:nth-child(3) > img{
+                width: 23.854vw;
+                height: 44.911vw;
+            }
+    main > div:nth-child(4){   
+            position: absolute;
+            left: 103.229vw;
+            top: 7.135vw;
+            
+            width: 24.531vw;
+            height: 35.417vw;
+
+            z-index: 0;
+        }
+        main > div:nth-child(4) > img:nth-child(1){
+                display: block;
+                width: 20.104vw;
+                height: 10.365vw;
+
+                padding-bottom: 1.719vw;
+            }
+        main > div:nth-child(4) > img:nth-child(2){
+                display: block;
+                width: 24.167vw;
+                height: 13.125vw;
+
+                padding-bottom: 1.875vw;
+            }
+        main > div:nth-child(4) > img:nth-child(3){
+                display: block;
+                width: 17.083vw;
+                height: 8.333vw;
+            }
+    main > div:nth-child(5){   
+            position: absolute;
+            left: 116.354vw;
+            top: 0;
+            
+            z-index: 0;
+        }
+        main > div:nth-child(5) > img{
+            width: 71.563vw;
+            height: 55.885vw;
+        }
+
+    main > div:nth-child(6) >img{
+        position: absolute;
+        left: 0;
+        top: 45.573vw;
+        
+        z-index: -1;
+        }
+        main > div:nth-child(6) > img{
+            width: 278.490vw;
+            height: 10.677vw;
+            }
+
+        /* 영상 파트 */
+
+.video{
+    position: absolute;
+    left: 190.573vw;
+    top: 10.738vw;
+
+    width: 55vw;
+    height: 34.523vw;
+
+    background-image: url(./images/Vframe.png);
+    background-position: center center;
+    background-size: 55vw 34.523vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .video iframe{
+        width: 51.771vw;
+        height: 29.583vw;
+    }
+
+            /* 제품 추천 */
+main > div:nth-child(8){
+        position: absolute;
+        left: 249.583vw;
+        top: 8.333vw;
+
+        width: 17.240vw;
+        height: 34.323vw;
+    }
+    main > div:nth-child(8) > h3{
+        font-size: 0.833vw;
+        font-weight: 400;
+        
+        color: #3e3e3e; 
+
+        padding-bottom: 2.917vw;
+    }
+    .recom{
+        position: relative;
+
+        width: 16.667vw;
+        height: 9.375vw;
+
+        padding-bottom: 1.042vw;
+        padding-right: 12.179vw;
+
+        border-radius: 1.042vw;
+        filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.08));
+    }
+
+    .recover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+       
+        width: 16.667vw;
+        height: 9.375vw;
+        
+        color: #fff;
+        text-align: center;
+        border-radius: 1.042vw;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        transition: all 0.2s ease;
+        opacity: 0%;
+       }
+        .recover h4{
+            font-size: 0.729vw;
+            font-weight: 400;
+        }
+        .recover h4 span{
+            font-size: 0.625vw;
+            font-weight: 400;
+        }
+    .recover:hover{
+        opacity: 100%;
+    }
+       
+        .recom:nth-last-child(1){
+            padding-bottom: 0;
+        }
+        .recom > a > img{
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        #infobut01{
+            position: absolute;
+            top: 16.667vw;
+            left: 75.990vw; 
+        } 
+        #infobut02{
+            position: absolute;
+            top: 11.875vw;
+            left: 140.573vw; 
+        } 
+        #infobut03{
+            position: absolute;
+            top: 38.079vw;
+            left: 170.833vw; 
+        }                
+        
+        
+        .infobut{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+            gap: 1.042vw;
+        }
+                .infobut img{
+                    width: 4.167vw;
+                    height: 4.167vw;
+        
+                    opacity: 30%;
+                    transition: all 0.2s ease;
+                }
+                .infobut div{
+                    display: flex;
+                    align-items: center;
+                    width: calc(25.104vw - 2.084vw);
+                    height: calc(5.833vw - 1.25vw);
+                    
+                    background-color: rgb(255, 255, 255);
+                    
+                    padding: 0.625vw 1.042vw;
+        
+                    opacity: 0%;
+                    transition: all 0.2s ease;
+                }
+                    .infobut div p{
+                        font-size: 0.625vw;
+                        line-height: 180%;
+                        font-weight: 300;
+                        color: #333;
+                    }
+                        .infobut img:hover{
+                            opacity: 100%;
+                        }
+                        .infobut img:hover ~ div{
+                            opacity: 100%;
+                        }
+                        .bubox{
+                            position: fixed;
+                            right: 7.460vw;
+                            top: 7.160vw;
+                
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                
+                            width: 15.833vw;
+                            height: 5.604vw;
+                
+                            padding-left: 0.833vw;
+                            background-image: url(/images/Index_Works_product/bu.png);
+                            background-size: cover;
+                            background-position: center center;
+                
+                            opacity: 0%;
+                            transition: all 0.2s ease;
+                        }
+                            /* .bubox p{
+                                font-size: 0.729vw;
+                                line-height: 157%;
+                                
+                                color: #555555;
+                            } */
+                
+                        .functionkey{
+                            position: fixed;
+                            right: 3.750vw;
+                            top: 8.333vw;
+                            
+                            width: 4.167vw;
+                            height: 40vw;
+                    
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                            .functionkey > div:nth-child(1){
+                                position: relative;
+                                display:flex;
+                                flex-direction: column;
+                                align-items: center;
+                                gap: 1.250vw;
+                            }
+                            .togg{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .pause{
+                                position:absolute;
+                                width: 30px;
+                                height: 30px;
+                
+                                margin-top: -1.354vw;
+                                background-color: #fff;
+                                border-radius: 100%;
+                
+                                transition: all 0.2s ease;
+                            }
+                       
+                
+                            /* 보조 메뉴 프로필 부분 */
+                            .iconbut{
+                                display: flex;
+                                flex-direction: column;
+                                
+                                
+                                width: 4.167vw;
+                                height: 14.166vw;
+                            }
+                            .iconimg{
+                                position: relative;
+                                width: 4.167vw;
+                                height: 4.167vw;
+
+                                margin-top: 0.833vw;
+                            }
+                            .profile{
+                                
+                                border-radius: 100%;
+                                width: 4.167vw;
+                                height: 4.167vw;
+                            }
+                            .profile-cover{
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+
+                                display:flex;
+                                justify-content: center;
+                                align-items: center;
+                                
+                                width: 4.167vw;
+                                height: 4.167vw;
+
+                                background-color: rgba(0, 0, 0, 0.5);
+                                border-radius: 100%;
+                
+                                text-align: center;
+                                
+                                transition: all 0.2s ease;
+                                opacity: 0%;
+                            }
+                                .profile-cover:hover{
+                                    opacity: 100%;
+                                }
+                                .profile-cover p{
+                                    font-size: 0.625vw;
+                                    color: rgba(255, 255, 255, 0.7);
+                    
+                                    padding-bottom: 0.104vw;
+                                }
+                            .profile-cover span{
+                                font-size: 0.521vw;
+                            }
+                
+                        
+                
+                
+                    /* 모달 스타일 */
+                            .modal{
+                                position: fixed;
+                                justify-content: center;
+                                align-items: center;
+                                
+                                display: none;
+                                
+                                height: 100vh;
+                                width: 100vw;
+                                
+                                background-color: rgba(0, 0, 0, 0.5);
+                
+                                z-index: 999;
+                            }
+                
+                            .modal-info{
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: column;
+                
+                                width: 28.541vw;
+                                height: 18.802vw;
+                
+                                background: rgb(255, 255, 255);
+                                box-shadow: 2px 5px 40px rgba(0, 0, 0, 0.08);
+                                border-radius: 0.416vw;
+                
+                                padding: 1.458vw 1.458vw 2.083vw 1.458vw;
+                            }
+                                .modalbutton{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                }
+                                    .exit{
+                                        width: 1.8vw;
+                                        height: 1.8vw;
+                
+                                        border: none;
+                                        background-image: url(/images/Index_Works_product/x.png);
+                                        background-size: cover;
+                                        background-position: center center;
+                                    border-radius: 0.208vw;
+                                        opacity: 50%;
+                                        transition: all 0.2s ease;
+                                    }
+                                        .exit:hover{
+                                            opacity: 100%;
+                                        }
+                                    .in{
+                                        width: 3.854vw;
+                                        height: 2.187vw;
+                
+                                        border: none;
+                                        border-radius: 0.208vw;
+                                        transition: all 0.2s ease;
+                                    }
+                                        .in:hover{
+                                            background-color: rgba(51, 51, 51, 0.8);
+                                        }
+                                        .in:hover h1{
+                                            color: #fff;
+                                        }
+                                        .in h1{
+                                            font-size: 0.937vw;
+                                            color: #9a9a9a;
+                                            font-weight: 200;
+                                        }
+                        
+                                .modal-info div{
+                                    position: relative;
+                                }
+                                .modal-title{
+                                    position: absolute;
+                                    left: 0.833vw;
+                                    top: -0.520vw;
+                       
+                                    width: 1.510vw;
+                                    height: 1.041vw;
+                
+                                    text-align: center;
+                                    font-size: 0.625vw;
+                                    font-weight: 300;
+                
+                                    padding: 0.052vw 0.208vw;
+                
+                                    color: #8B8B8B;
+                                    background-color: #fff;
+                
+                                    
+                                }
+                                    .name{
+                                        width: 26.458vw;
+                                        height: 2.916vw;
+                
+                                        padding-left: 0.833vw;
+                                        padding-right: 0.833vw;
+                
+                                        border-radius: 0.625vw;
+                                        border: solid 1px #DFDFDF;
+                                    }
+                
+                                    .text{
+                                        width: 26.458vw;
+                                        height: 7.968vw;
+                
+                                        padding: 0.833vw;
+                                        
+                                        border-radius: 0.625vw;
+                                        border: solid 1px #DFDFDF;
+                                        
+                                    }
+                                        input::placeholder {
+                                            color: #CECECE;
+                                            font-size: 16px;
+                                           
+                        
+                                        }
+                                            
+                
+                            div.post{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                
+                                padding: 1.458vw;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                
+                                width: calc(12.208vw - 2.916vw);
+                                height: calc(5.687vw - 2.916vw);
+                
+                                background-image: url(/images/Index_Works_product/post.png);
+                                background-size: cover;
+                                background-position: center center;
+                
+                                z-index: 10;
+                            }
+                
+                            div.post p:nth-child(1){
+                                text-align: center;
+                                font-size: 0.729vw;
+                                color: #333333;
+                
+                                margin-bottom: 0.520vw;
+                            }
+                            div.post p:nth-child(2){
+                                text-align: right;
+                                font-size: 0.520vw;
+                                color: #6f6f6f;
+                            }

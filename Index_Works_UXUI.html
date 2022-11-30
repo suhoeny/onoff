@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/Index_Works_UXUI.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javaScript/swiper.4.5.1.js"></script>
+
+    <title>Works_Product</title>
+  </head>
+  <body>   
+    <div class="headercon">
+      <header>
+          <a href="index.html" class="logo">ON·OFF</a>
+          <ul class="nav">
+              <li><a class="navitem navitem1" href="/Index_About.html">ABOUT</a></li>
+              <li><a class="navitem navitem2" href="#">WORKS</a></li>
+              <li><a class="navitem navitem3" href="/Index_Designer.html">DESIGNER</a></li>
+              <li><a class="navitem navitem4" href="/Index_Credit.html">CREDIT</a></li>
+          </ul>
+      </header>
+      <div class="drop">
+          <a class="dropnav dropnav1" href="/Index_Works_Product.html">PRODUCT</a>
+          <a class="dropnav dropnav2" href="/Index_Works_UXUI.html">UX UI</a>
+      </div>
+  </div>
+
+    <h1>UXUI</h1>
+
+    <main>
+      <section class="swiper-area">
+        
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="Index_Works_UXUI_UXUI.html">
+                <div class=work-img>
+                  <img src="images/Index_Works/uxui/img01.png">
+                </div>
+                <div class="info">
+                  <div class="name">홍수정 김아정 이효정</div>
+                  <div class="title">DOT<br>BOOK</div>
+                </div>
+              </a>
+            </div>
+
+             <div class="swiper-slide">
+              <div>
+                <a href="Index_Works_UXUI_UXUI.html">
+                  <div class=work-img>
+                    <img src="images/Index_Works/uxui/img02.png">
+                  </div>
+                  <div class="info">
+                    <div class="name">서정민 이현나 조민기</div>
+                    <div class="title">MOMe<br>MOM</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+             <div class="swiper-slide">
+              <div>
+                <a href="Index_Works_UXUI_UXUI.html">
+                  <div class=work-img>
+                    <img src="images/Index_Works/uxui/img03.png">
+                  </div>
+                  <div class="info">
+                    <div class="name">조은 이애리 윤주희</div>
+                    <div class="title">LOOK<br>NOOK</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+             <div class="swiper-slide">
+              <div>
+                <a href="Index_Works_UXUI_UXUI.html">
+                  <div class=work-img>
+                    <img src="images/Index_Works/uxui/img04.png">
+                  </div>
+                  <div class="info">
+                    <div class="name">김지호 전유미</div>
+                    <div class="title">GONG<br>CHIL</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+             <div class="swiper-slide">
+              <div>
+                <a href="Index_Works_UXUI_UXUI.html">
+                  <div class=work-img>
+                    <img src="images/Index_Works/uxui/img05.png">
+                  </div>
+                  <div class="info">
+                    <div class="name">박가연 음선미</div>
+                    <div class="title">SERVI</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+             <div class="swiper-slide">
+               <div>
+                  <a href="Index_Works_UXUI_UXUI.html">
+                    <div class=work-img>
+                      <img src="images/Index_Works/uxui/img06.png">
+                    </div>
+                    <div class="info">
+                      <div class="name">강유나</div>
+                      <div class="title">MEGA<br>NOTE</div>
+                    </div>
+                  </a>
+                </div>
+            </div>
+              <!-- 오류 수정 -->
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+          </div>
+        </div>
+
+        <div class="swiper-nav-wrap">
+          <div class="inner">
+            <div class="swiper-button-prev"><img class="prev" src="images/Index_Works/uxui/chevron-left.png"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"><img class="next" src="images/Index_Works/uxui/chevron-right.png"></div>
+          </div>
+        </div>
+        
+      </section> 
+    </main>
+
+       <script type="text/javascript">
+         $(document).ready(function() {
+
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+                pagination: {
+                  el: '.swiper-pagination',
+                  type: 'custom',
+                  renderCustom: function (swiper, current, total) {
+                    if( 7 > current){
+                      return '0'+current + ' / ' + '0'+(6); 
+                    }
+                  }
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+                on : {
+                  slideChangeTransitionEnd: function(){
+                    console.log(this.activeIndex);
+                  }
+                }
+            });
+            });
+
+         $(function() {
+    //메뉴 호버시 다른 메뉴 색상 어둡게
+    $('.navitem1').hover(
+        function(){
+            $('.navitem1').css('color','#151515');
+            $('.navitem2').css('color','#999');
+            $('.navitem3').css('color','#999');
+            $('.navitem4').css('color','#999');
+        },
+        function(){
+            $('.navitem1').css('color','#999');
+            $('.navitem2').css('color','#151515');
+            $('.navitem3').css('color','#999');
+            $('.navitem4').css('color','#999');
+        }
+    );
+
+    $('.navitem2').hover(
+        function(){
+            $('.navitem1').css('color','#999');
+            $('.navitem2').css('color','#151515');
+            $('.navitem3').css('color','#999');
+            $('.navitem4').css('color','#999');
+        },
+        function(){
+            $('.navitem1').css('color','#999');
+            $('.navitem2').css('color','#151515');
+            $('.navitem3').css('color','#999');
+            $('.navitem4').css('color','#999');
+        }
+    );
+
+    $('.navitem3').hover(
+        function(){
+            $('.navitem1').css('color','#999');
+            $('.navitem2').css('color','#999');
+            $('.navitem3').css('color','#151515');
+            $('.navitem4').css('color','#999');
+        },
+        function(){
+            $('.navitem1').css('color','#999');
+            $('.navitem2').css('color','#151515');
+            $('.navitem3').css('color','#999');
+            $('.navitem4').css('color','#999');
+        }
+    );
+
+    $('.navitem4').hover(
+        function(){
+            $('.navitem2').css('color','#999');
+            $('.navitem3').css('color','#999');
+            $('.navitem1').css('color','#999');
+            $('.navitem4').css('color','#151515');
+        },
+        function(){
+            $('.navitem2').css('color','#151515');
+            $('.navitem3').css('color','#999');
+            $('.navitem1').css('color','#999');
+            $('.navitem4').css('color','#999');
+        }
+    );
+
+    //works 클릭시 드롭메뉴 나오기
+    $('.navitem2').click(function(){
+        $('.drop').toggleClass('opacity');
+    });
+});
+
+       </script>
+    </body>
+</html>

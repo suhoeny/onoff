@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON·OFF</title>
+
+    <link rel="stylesheet" href="css/Index_Credit.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="headercon">
+            <header>
+                <a href="index.html" class="logo">ON·OFF</a>
+                <ul class="nav">
+                    <li><a class="navitem navitem1" href="/Index_About.html">ABOUT</a></li>
+                    <li><a class="navitem navitem2" href="#">WORKS</a></li>
+                    <li><a class="navitem navitem3" href="/Index_Designer.html">DESIGNER</a></li>
+                    <li><a class="navitem navitem4" href="/Index_Credit.html">CREDIT</a></li>
+                </ul>
+            </header>
+            <div class="drop">
+                <a class="dropnav dropnav1" href="/Index_Works_Product.html">PRODUCT</a>
+                <a class="dropnav dropnav2" href="/Index_Works_UXUI.html">UX UI</a>
+            </div>
+        </div>
+
+        <main class="main">
+            <h1>PREPARATION<br>COMMITTEE</h1>
+            <p>2022년도 온라인 졸업전시회 ‘ON·OFF'를 위해 준비한 학생들을 소개합니다. 열심히 달려온 만큼 온라인 플랫폼에서도 그 노력과 열정이 전해지리라 생각합니다. 저희 졸업전시를 찾아주신
+                모든 분들께 깊은 감사의 인사를 드립니다.</p>
+            <img class="img1" src="https://i.postimg.cc/RCyW5VT9/1-52-1.png" alt="">
+            <img class="img2" src="https://i.postimg.cc/9F9rW5x9/dnsocjndsoc.png" alt="">
+        </main>
+        <!-- <div class="view">
+            <p>VIEW MORE</p>
+            <a href="#"><i class="fas fa-arrow-right"></i></a>
+        </div> -->
+    </div>
+
+    <script>
+        $(function() {
+    //메뉴 호버시 다른 메뉴 색상 어둡게
+$('.navitem1').hover(
+    function(){
+        $('.navitem1').css('color','#151515');
+        $('.navitem2').css('color','#999');
+        $('.navitem3').css('color','#999');
+        $('.navitem4').css('color','#999');
+    },
+    function(){
+        $('.navitem1').css('color','#999');
+        $('.navitem2').css('color','#999');
+        $('.navitem3').css('color','#999');
+        $('.navitem4').css('color','#151515');
+    }
+);
+
+$('.navitem2').hover(
+    function(){
+        $('.navitem1').css('color','#999');
+        $('.navitem2').css('color','#151515');
+        $('.navitem3').css('color','#999');
+        $('.navitem4').css('color','#999');
+    },
+    function(){
+        $('.navitem1').css('color','#999');
+        $('.navitem2').css('color','#999');
+        $('.navitem3').css('color','#999');
+        $('.navitem4').css('color','#151515');
+    }
+);
+
+$('.navitem3').hover(
+    function(){
+        $('.navitem1').css('color','#999');
+        $('.navitem2').css('color','#999');
+        $('.navitem3').css('color','#151515');
+        $('.navitem4').css('color','#999');
+    },
+    function(){
+        $('.navitem1').css('color','#999');
+        $('.navitem2').css('color','#999');
+        $('.navitem3').css('color','#999');
+        $('.navitem4').css('color','#151515');
+    }
+);
+
+$('.navitem4').hover(
+    function(){
+        $('.navitem2').css('color','#999');
+        $('.navitem3').css('color','#999');
+        $('.navitem1').css('color','#999');
+        $('.navitem4').css('color','#151515');
+    },
+    function(){
+        $('.navitem2').css('color','#999');
+        $('.navitem3').css('color','#999');
+        $('.navitem1').css('color','#999');
+        $('.navitem4').css('color','#151515');
+    }
+);
+
+//works 클릭시 드롭메뉴 나오기
+$('.navitem2').click(function(){
+    $('.drop').toggleClass('opacity');
+});
+
+//드롭메뉴 호버시에도 works 진하게
+$('.drop').hover(
+    function(){
+        $('.navitem1').css('color','#999');
+        $('.navitem2').css('color','#151515');
+        $('.navitem3').css('color','#999');
+        $('.navitem4').css('color','#999');
+    },
+    function(){
+        $('.navitem1').css('color','#999');
+        $('.navitem2').css('color','#999');
+        $('.navitem3').css('color','#999');
+        $('.navitem4').css('color','#151515');
+    }
+);
+});
+    </script>
+</body>
+
+</html>

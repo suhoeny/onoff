@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    max-width: 61.458vw;
+    min-width: 61.458vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    max-width: 61.458vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.167vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* border-bottom: 1px solid #fff; */
+}
+
+header .logo {
+    font-weight: 400;
+    font-size: 1.042vw;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.917vw;
+}
+
+header .nav li a {
+    font-weight: 400;
+    font-size: 0.833vw;
+}
+
+.headercon{
+    position: relative;
+}
+
+.navitem2, .navitem3, .navitem4{
+    transition: all 0.2s ease;
+}
+
+.navitem1, .navitem2, .navitem3{
+    color: #999;
+}
+
+.navitem4{
+    color: #151515;
+}
+
+.drop{
+    position: absolute;
+    left: 45.313vw;
+    top: 3.333vw;
+    z-index: 10;
+
+    font-weight: 400;
+    font-size: 0.833vw;
+    width: 6.875vw;
+    height: 3.750vw;
+    border-radius: 0.208vw;
+    border: 1px solid #D5D5D5;
+    padding-left: 0.625vw;
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.417vw;
+    opacity: 0;
+}
+
+.opacity{
+    opacity: 1;
+}
+
+.main {
+    position: relative;
+    height: calc(100vh - 5.208vw);
+}
+
+.main h1 {
+    font-weight: normal;
+    font-size: 6.250vw;
+    line-height: 7.396vw;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.01em;
+    color: #333333;
+    position: absolute;
+    z-index: 10;
+    top: 10.729vw;
+}
+
+.main p {
+    font-weight: 400;
+    font-size: 0.833vw;
+    line-height: 180%;
+    color: #6F6F6F;
+    width: 16.667vw;
+    position: absolute;
+    top: 30.521vw;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main .img2 {
+    width: 30.208vw;
+    position: absolute;
+    right: 0;
+    opacity: 0.8;
+}
+
+.main .img1 {
+    width: 14.583vw;
+    position: absolute;
+    top: 2.396vw;
+    left: 5.208vw;
+}

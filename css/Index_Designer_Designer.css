@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.container {
+    max-width: 61.458vw;
+    min-width: 61.458vw;
+    margin: 0 auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    max-width: 61.458vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.167vw;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* border-bottom: 1px solid #fff; */
+}
+
+header .logo {
+    font-weight: 400;
+    font-size: 1.042vw;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.917vw;
+}
+
+header .nav li a {
+    font-weight: 400;
+    font-size: 0.833vw;
+}
+
+.headercon{
+    position: relative;
+}
+
+.navitem2, .navitem3, .navitem4{
+    transition: all 0.2s ease;
+}
+
+.navitem4, .navitem2, .navitem1{
+    color: #999;
+}
+
+.navitem3{
+    color: #151515;
+}
+
+.drop{
+    position: absolute;
+    left: 45.313vw;
+    top: 3.333vw;
+
+    font-weight: 400;
+    font-size: 0.833vw;
+    width: 6.875vw;
+    height: 3.750vw;
+    border-radius: 0.208vw;
+    border: 1px solid #D5D5D5;
+    padding-left: 0.625vw;
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.417vw;
+    opacity: 0;
+}
+
+.opacity{
+    opacity: 1;
+}
+
+.content{
+    display: flex;
+    gap: 6.250vw;
+
+    margin-top: 3.08vw;
+}
+
+.image img{
+    width: 25vw;
+    height: 36.458vw;
+    margin-bottom: 0.625vw;
+}
+
+.sns_{
+    display: flex;
+    gap: 0.625vw;
+}
+
+.sns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    width: 2.500vw;
+    height: 2.500vw;
+    border: 0.052vw solid #F0F0F0;
+    box-sizing: border-box;
+    border-radius: 1.250vw;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1.458vw;
+    height: 1.458vw;
+    background: #333333;
+    border-radius: 24px;
+}
+
+.fa-twitter, .fa-facebook-f, .fa-instagram{
+    color: #fff;
+}
+
+.name{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.667vw;
+    line-height: 2.240vw;
+    color: #333333;
+    margin-bottom: 0.625vw;
+}
+
+.ment{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.708vw;
+    line-height: 3.906vw;
+    letter-spacing: -0.01em;
+    color: #333333;
+    margin-bottom: 1.458vw;
+}
+
+.paragraph{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.833vw;
+    line-height: 180%;
+    color: #333333;
+    margin-bottom: 2.083vw;
+}
+
+.information{
+    display: flex;
+    gap: 1.354vw;
+}
+
+.form-title, .forminfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.729vw;
+}
+
+.title{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.833vw;
+    line-height: 1.042vw;
+    color: #333333;
+}
+
+.form-info{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.833vw;
+    line-height: 1.042vw;
+    text-decoration-line: underline;
+    color: #6F6F6F;
+
+    cursor: pointer;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.708vw;
+}
+
+.projectname{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.146vw;
+    line-height: 1.042vw;
+    color: #333333;
+    margin-bottom: 1.250vw;
+}
+
+.three_projects{
+    display: flex;
+    gap: 1.042vw;
+}
+
+.project > img{
+    width: 9.375vw;
+    height: 13.5415vw;
+    margin-bottom: 0.625vw;
+    cursor: pointer;
+}
+
+.project{
+    cursor: pointer;
+}
+
+.project-title{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.833vw;
+    line-height: 1.146vw;
+    letter-spacing: -0.031vw;
+    color: #333333;
+    margin-bottom: 0.104vw;
+}
+
+.project-student{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.729vw;
+    line-height: 1.146vw;
+    color: #6F6F6F;
+}
